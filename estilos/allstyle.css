@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url("../imagens/wallpaper02.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+ 
+main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card {
+    width: 35vw;
+    height: 25vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid aqua;
+    border-radius: 20px;
+
+}
+
+.card img {
+   width: 100px;
+   border-radius: 50%;
+   
+}
+
+.nome {
+    padding-top: 10px;
+}
+
+.descNome{
+    padding-top: 40px;
+}
+
