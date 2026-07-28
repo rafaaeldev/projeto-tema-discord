@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Mobile*/
 
 * {
     margin: 0;
@@ -12,7 +13,7 @@ html,body {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(11, 11, 19);
 }
 
 header {
@@ -25,6 +26,7 @@ header {
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)), 
     url("../imagens/wallpaper02.png");
+    box-shadow: inset 0 -20px 30px rgba(0, 0, 0, 0.6);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -32,12 +34,14 @@ header {
 }
 
 header h1 {
+    color: rgb(255, 255, 255);
     font-size: 45px;
     font-weight: 900;
     padding-bottom: 20px;
 }
 
 header p {
+    color: #cbd5e1;
     font-size:20px;
 }
  
@@ -46,6 +50,7 @@ main {
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .coluna {
@@ -55,6 +60,11 @@ main {
 }
 
 .card {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 25px;
+
     width: 35vw;
     height: 25vh;
     padding-top: 30px;
@@ -62,15 +72,26 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid aqua;
-    border-radius: 20px;
 
+}
+
+.card:active{
+    transform: translateY(-10px) scale(1.03);
+    border-color:#3b5df6;
+    box-shadow:0 20px 50px rgba(59, 78, 246, 0.35);
+    transition: .1s ease;
 }
 
 .card img {
    width: 100px;
    border-radius: 50%;
+   border: 3px solid rgba(255,255,255,.08);
    
+}
+
+.card img:active {
+  border: 3px solid rgba(0, 168, 14, 0.986); 
+  transition: .1s ease; 
 }
 
 .nome {
